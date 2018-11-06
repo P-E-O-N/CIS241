@@ -1,0 +1,98 @@
+<!--THINGS TO INLCUDE
+mailto guestbook form
+Vistors Name
+How vistor found website.  Drop down list or radio buttons.  Surfed in/ word of mouth etc
+A test box for the Vistors website with default value of http:// displayed
+A text area for comments.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--REQ Meta = Author / Keywords / Description / http-equiv / robots -->
+<meta name="author" content="Matthew Flack">
+<meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer Program, Edmonds Community College">
+<meta name="description" content="Home Page page for my first website">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="NOINDEX, NOFOLLOW">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guest Book Page - Matthew Flack</title>
+
+<link rel="stylesheet" href="../CSS/myStyle.css">
+</head>
+
+<body>
+
+<h1> Guest Book Page - Matthew Flack</h1>
+<br/>
+<br/>
+<form
+method="post"
+action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+Enter Your Name: <input type="text" name="Name" size="40"/>
+<br/>
+<br/>
+Enter Your E-mail: <input type="text" name="Email" size="40"/>
+<br/>
+<br/>
+<br/>
+What Country do you live in? <input type="text" name="Country" size="40"/>
+<br/>
+<br/>
+<br/>
+What is your age group?<br/>
+<input type="radio" name="AgeGroup" value="Under 18"/>Under 18 <br/>
+<input type="radio" name="AgeGroup" value="18-30" checked="checked"/>18-30<br/>
+<input type="radio" name="AgeGroup" value="31-45" />31-45<br/>
+<input type="radio" name="AgeGroup" value="46-64" />46-64<br/>
+<input type="radio" name="AgeGroup" value="65 and over"/>65 and over<br/>
+<br/>
+<br/>
+Should we add you to the mailing list?
+<input type="checkbox" name="AddToList" value="yes"/><br/>
+<br/>
+<br/>
+What web technologies are you interested in? (Check all that apply): <br/>
+<select name="Interests" multiple="multiple" size="6">
+<option>HTML</option>
+<option>CSS </option>
+<option>JavaScript</option>
+<option>AJAX</option>
+<option>SQL</option>
+<option>PHP</option>
+</select>
+<br/>
+<br/>
+
+How did you find my website?
+<br/>
+<select name="HowFound">
+<option>Select One</option>
+<option>I'm a friend</option>
+<option>A friend directed me to your site</option>
+<option>School Web Site</option>
+<option>A search engine directed me to your site</option>
+<option>I came across your site by accident</option>
+<option>Other</option>
+</select>
+<br/>
+<br/>
+Comments:<br/>
+<textarea name="Comments" cols="60" rows="7">
+Enter your message here.
+</textarea>
+<br/>
+<br/>
+<input type="submit"/>
+<input type="reset"/>
+</form>
+	
+
+
+
+
+
+</body>
+</html>
