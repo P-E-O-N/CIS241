@@ -1,0 +1,133 @@
+<!--THINGS TO INCLUDE
+Embedded Graphics throughout Web site
+3-4 paragrpahs about me and my interests (4-8 sentences per paragraph) -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--REQ Meta = Author / Keywords / Description / http-equiv / robots -->
+	<meta name="author" content="Matthew Flack">
+	<meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer, Edmonds Community College">
+	<meta name="description" content="Home Page page for my first website">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="NOINDEX, NOFOLLOW">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page - Matthew Flack</title>
+	<link rel="stylesheet" href="../CSS/myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+	article
+	{	
+		background-image:url("../images/mountain_sunset.png");
+		background-attachment: fixed;
+		border-top:5px solid #25274D;
+		border-bottom:5px solid #25274D;
+		border-color:#25274D;
+	}
+	</style>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function()
+	{scrollFunction()};
+	function scrollFunction() 
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+		{
+			document.getElementById("topbtn").style.display = "block";
+		} else {
+			document.getElementById("topbtn").style.display = "none";
+		}
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() 
+	{
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	</script>
+</head>
+
+
+<!--BODY-->
+<body id="top">
+	<header class="header-style">
+		<div class="logo-cont">
+			<img src="../images/logo_small.png" alt="My logo" width="140" class="logo-style"/>
+			<nav class="nav-style">
+				<ul>
+					<li><a href="home.htm">Home</a></li>
+					<li><a href="interests.htm">Interests</a></li>
+					<li><a href="resume.htm">Resume</a></li>
+					<li><a href="reflections.htm">Reflections</a></li>
+					<li><a href="guestbook.htm">Guest Book</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+	<button onclick="topFunction()" id="topbtn" title="Go to top">&#8679;</button> <!--scrollbutton-->	
+ <!--ARTICLE-->
+	<article>
+	<br/>
+	<br/>
+	<div class="article-style">
+		<h1 style="display:inline">My name is</h1><h3 id="name" style="display:inline"> Matthew Flack</h3>
+		<h3>This is my first website!</h3>
+		<br/>
+		<h3>A little bit about me:</h3>
+		<br/>
+		<p class="tab">
+		<img src="../images/leavenworth_blue.png" alt="leavenworth logo" width="140" class="float-right"/>
+			I was born in San Bernardino CA and moved to WA when I was eight years old.  My father was tired of living in southern CA and threw his tent in the car and took a two-week road trip north, stopping whenever he found someplace interesting. Eventually he ended up in Leavenworth WA and he always told me that as soon as he saw it <q>he knew</q>.  Leavenworth is a beautiful little Bavarian village nestled in the Cascade mountains and only about 2 hours east of Seattle.    I went to the local high school (Cascade) and grew up enjoying the gorgeous outdoor setting of the area.  I was able to enjoy mountain biking, hiking, swimming, river rafting, skiing and backpacking in the Enchantments and Snow Lakes area.  I went to the University of Washington after high school where I studied geology.   After attending the UW, I worked a few odd jobs.  Everything, from construction to the front office at Edward Jones, and eventually ended up working as a valet at Anthony's restaurant.	
+		</p>
+		<br/>
+		<hr class="light small"/>
+		<br/>
+		<p class="tab">
+			In 2006  I married my high school sweetheart who had also attended the UW with me.   We have a beautiful 9-year old daughter named Quinn, along with  our dog Sumo,  a cat named Mims and two ferrets named Whiskey & Widget.  Animals are <em>PART</em> of our family.  If you have never had any experience with ferrets, they can be a lot of work (like  having a two-year old) but are amazing pets.  Those bouncing balls of fur will give you kisses, bite your toes, give you more kisses and then fall asleep in your shoe.  
+		</p>
+		<br/>
+		<hr class="light small"/>
+		<br/>
+		<p class="tab">
+		<img src="../images/degree.png" alt="leavenworth logo" width="140" class="float-right"/>
+			The things that I  enjoy are spending time with my family, reading, being outdoors, and working with computers.  In the past few years I’ve grown interested in web design and recently started the cloud applications and web developer  ATA. program at Edmonds community college.  I will be graduating in the fall of 2020.  In the free time I have outside of school & work I mostly spend it with my family.  We might end up going on trip  to Disneyland,  to someplace with warm beaches, or even just relaxing at home with a cup of coffee and a boardgame.   When I find time to do some reading, I mostly enjoy science fiction or fantasy.  Some of my favorite authors are Peter F. Hamilton, Brandon Sanderson and Patrick Rothfuss.   There are many more on my list, but I tend to pick a new author to try every now and again when I catch up on my current reading list.
+		</p>
+		</div>
+	<br/>
+	<br/>
+	</article>
+	<br/>
+	<div class="center"><h4>Contact me:</h4>maq.flack@gmail.com</div>
+	<br/>
+	<hr class="dark small"/>
+	<br/>
+	<!--ASIDE-->
+	<aside>
+	</aside>
+	<!--FOOTER-->
+	<footer>
+	
+			
+	<!--
+	 <span>HTML5 Logo by <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span>.
+	-->
+					
+	
+	
+		<div class="footer-cont">
+			<a class="float-left" href="https://validator.w3.org/#validate_by_upload" target="_blank"><img src="../images/HTML5_Logo_50.png" alt="HTML5 icon link to HTML valiadation" width="50"/></a>
+			<a class="float-left" href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank"><img style="padding-top:11px;" src="../images/valid-css2.png" alt="CSS icon link to validation" width="88"/></a>
+			
+			
+			<a class="float-right" href="https://www.w3schools.com/" target="_blank"><img style="padding-top:0px" src="../images/w3logo_148w.png" alt="W3 Schools icon and link" width="148"/></a>
+			<h5 class="center">&copy; 2018 Matthew Flack</h5>
+		</div>
+	</footer>
+	<br/>
+	<br/>
+	
+ </body>
+</html>

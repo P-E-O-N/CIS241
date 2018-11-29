@@ -1,0 +1,168 @@
+<!--THINGS TO INCLUDE
+Embedded Graphics throughout Web site
+3-4 paragrpahs about me and my interests (4-8 sentences per paragraph) -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--REQ Meta = Author / Keywords / Description / http-equiv / robots -->
+	<meta name="author" content="Matthew Flack">
+	<meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer, Edmonds Community College">
+	<meta name="description" content="Home Page page for my first website">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="NOINDEX, NOFOLLOW">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guestbook - Matthew Flack</title>
+	<link rel="stylesheet" href="../CSS/myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+	article
+	{	
+		background-image:url("../images/trail_in_woods.png");
+		background-attachment: fixed;
+		border-top:5px solid #25274D;
+		border-bottom:5px solid #25274D;
+		border-color:#25274D;
+	}
+	</style>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function()
+	{scrollFunction()};
+	function scrollFunction() 
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+		{
+			document.getElementById("topbtn").style.display = "block";
+		} else {
+			document.getElementById("topbtn").style.display = "none";
+		}
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() 
+	{
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	</script>
+	</head>
+
+
+<!--BODY-->
+<body id="top">
+	<header class="header-style">
+		<div class="logo-cont">
+			<img src="../images/logo_small.png" alt="My logo" width="140" class="logo-style"/>
+			<nav class="nav-style">
+				<ul>
+					<li><a href="home.htm">Home</a></li>
+					<li><a href="interests.htm">Interests</a></li>
+					<li><a href="resume.htm">Resume</a></li>
+					<li><a href="reflections.htm">Reflections</a></li>
+					<li><a href="guestbook.htm">Guest Book</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+	<button onclick="topFunction()" id="topbtn" title="Go to top">&#8679;</button> <!--scrollbutton-->		
+ <!--ARTICLE-->
+	<article>
+	<br/>
+	<br/>
+	<div class="article-style">
+			
+<h1 style="display:inline"> Guest Book -</h1><h3 id="name" style="display:inline"> Matthew Flack</h3>
+<br/>
+<br/>
+<hr class="light"/>
+<br/>
+<form action="mailto:maq.flack@gmail.com" method="post" enctype="text/plain">
+<!--
+method="post"
+action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+-->
+<br/>
+<strong>Enter Your Name:</strong> <input class="guestbk-border" type="text" name="Name" size="40"/>
+<br/>
+<br/>
+<strong>Enter Your E-mail:</strong> <input class="guestbk-border" type="text" name="Email" size="40"/>
+<br/>
+<br/>
+<strong>How did you find my website?</strong>
+<br/>
+<br/>
+<p style="margin-left:30px">
+	<input type="radio" name="HowNav" value="Just Surfted in!" checked="checked"/>&nbsp;&nbsp;Just Surfed in!<br/>
+	<input type="radio" name="HowNav" value="Word of Mouth."/>&nbsp;&nbsp;Word of Mouth.<br/>
+	<input type="radio" name="HowNav" value="Search Engine." />&nbsp;&nbsp;Search Engine.<br/>
+	<input type="radio" name="HowNav" value="A friend sent me." />&nbsp;&nbsp;A friend sent me.<br/>
+	<input type="radio" name="HowNav" value="Other"/>&nbsp;&nbsp;Other.<br/>
+</p>
+
+<br/>
+
+<pre><strong>What web technologies are you interested in?</strong> 
+(Check all that apply):</pre> 
+<br/>
+<p style="margin-left:30px">
+	<select class="blue-border" name="Interests" multiple="multiple" size="6">
+		<option>HTML</option>
+		<option>CSS </option>
+		<option>JavaScript</option>
+		<option>AJAX</option>
+		<option>SQL</option>
+		<option>PHP</option>
+	</select>
+	</p>
+	<br/>
+	<strong>If you have your own website please enter:</strong><br/>
+	<input class="guestbk-border" type="text" name="VisWebSite" value="http://" size="43"/>
+	<br/>
+	<br/>
+	<strong>Comments:</strong><br/>
+	<textarea class="guestbk-border" name="Comments" cols="60" rows="7">Enter your message here.</textarea>
+	<br/>
+	<br/>
+	<input style="width:60px" class="btn-style" type="submit" value="Send"/>
+	<input style="width:60px" class="btn-style" type="reset"/>
+</form>
+	</div>
+	<br/>
+	<br/>
+	
+	</article>
+	<br/>
+	<div class="center"><h4>Contact me:</h4>maq.flack@gmail.com</div>
+	<br/>
+	<hr class="dark small"/>
+	<br/>
+	<!--ASIDE-->
+	<aside>
+	</aside>
+	<!--FOOTER-->
+	<footer>
+	
+			
+	<!--
+	 <span>HTML5 Logo by <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span>.
+	-->
+					
+	
+	
+		<div class="footer-cont">
+			<a class="float-left" href="https://validator.w3.org/#validate_by_upload" target="_blank"><img src="../images/HTML5_Logo_50.png" alt="HTML5 icon link to HTML valiadation" width="50"/></a>
+			<a class="float-left" href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank"><img style="padding-top:11px;" src="../images/valid-css2.png" alt="CSS icon link to validation" width="88"/></a>
+			
+			
+			<a class="float-right" href="https://www.w3schools.com/" target="_blank"><img style="padding-top:0px" src="../images/w3logo_148w.png" alt="W3 Schools icon and link" width="148"/></a>
+			<h5 class="center">&copy; 2018 Matthew Flack</h5>
+		</div>
+	</footer>
+	<br/>
+	<br/>
+ </body>
+</html>
+

@@ -1,143 +1,287 @@
 /* STYLE SHEET FOR MY WEBSITE */
 
-h1
+*
 {
-	color:RED;
-}
-body 
-{
-margin:10px;
-background-image:url('background.jpg');
+margin:0;
+padding:0;
+font-family: 'Open Sans', sans-serif;
 }
 
-table
+#name 
 {
-font-family: Arial, Helvetica, Geneva, Swiss, sans-serif;
-font-size: 70%;
-width:90%;
+	color:black; 
+	font-size: 2em; 
+	font-family:'brush script mt',courier; 
+	font-stretch:ultra-expanded;
 }
 
-table.center
+.tab
 {
+	text-indent:40px;
+	font-size:  16px;
+	line-height:1.5;
+}
+.guestbk-border
+{
+	border: 2px solid #29648a;
+	padding: 5px 5px;
+}
+.media-border
+{
+border: 2px solid #29648a;	
+}
+.footer-cont
+{
+max-width:1000px;
+margin: 0 auto;
+height: 50px;
+/*
+border-style: solid;
+border-color:white;
+*/
+min-width:700px;
+}
+
+.logo-cont
+{
+max-width:1000px;
+margin: 0 auto;
+height: 76px;
+min-width:700px;
+/*
+border-style: solid;
+border-color:white;
+*/
+
+}
+.header-style
+{
+	/* "Border" shorthand:width,style,color*/
+    
+	/*
+	border:5px solid #25274D;
+	*/
+	background:#2e9cca;
+}	
+hr.dark
+{ 
+	height: 2px;
+	background-color: #29648A;
+	margin-left: auto;
+	margin-right:auto;
+	border: none;
+} 
+hr.light
+{ 
+	height: 1px;
+	background-color: #29648A;
+	margin-left: auto;
+	margin-right:auto;
+	border: none;
+	opacity: 0.4;
+} 
+
+hr.small
+{
+	width:80%;
+}
+	
+
+.article-style
+{
+padding: 40px 60px;
 margin-left: auto; 
 margin-right: auto;
+width: 870px;	
+background-color: #f7f9fb;
+border: 5px solid #31708e;
+box-shadow: -5px 8px 16px 2px rgba(0,0,0,0.73);
+border-radius: 15px 15px 15px 15px;
 }
-
-th.width
+.nav-style
 {
-width:50px;
+	float: right;	
 }
-
-td.center
+.logo-style
 {
-text-align:center;
+	float:left;
 }
-
-td
+.nav-style ul li
 {
-padding:5px;
+	display: inline-block;
+	list-style-type: none;
 }
-
-p 
+.nav-style ul li a  /*formats links in nav bar*/
 {
-margin-top: 9px; 
-font-size: 80%;
-margin-bottom: 9px;
-font-family: Arial, Helvetica, Geneva, Swiss, sans-serif;
+	padding:0px 20px;
+	font-weight: bold;
+	text-decoration:none;
+	color:#25274d;
+	line-height: 74px; /*line-height 74 px*/
 }
-
-h2 
+.nav-style ul li a:hover
 {
-margin-top: 9px; 
-font-weight: bold; 
-font-size: 120%;
-margin-bottom: 10px; 
-font-family: Arial, Helvetica, Geneva, Swiss, sans-serif;
-color: purple;
+color:#aaabb8;	
+cursor:pointer;
 }
-
-h3 
+.center
 {
-margin-top: 17px; 
-font-weight: bold; 
-font-size: 100%;
-margin-bottom: 10px; 
-font-family: Arial, Helvetica, Geneva, Swiss, sans-serif;
-color: purple;
-}
+text-align: center;
+/*
+line-height:50px;
+*/
+/*
+padding-top:15px;
+*/
+}	
 
-a 
+.float-left
 {
-color: #093
+	Float:left;
+	Padding:0px 5px;
 }
-
-img 
+.float-right
 {
-border:0px;
+	Float:Right;
+	Padding:5px 5px;
 }
 
-header 
-{		
-display:block;
-width:600px;
-padding:0;
-margin-bottom:0;
-background-color:#fff;
-}
-		
-#head  
-{	
-padding:0px; 
-margin:0px;
-border:0px;
-height:62px;
-background:#fff url(sybheaders_01.jpg) no-repeat left;
-}
-		
-#navbar	 
+body
 {
-margin:0px;
-padding:0px;
-border:0px;
-height:22px;
+	/*
+	border-style:solid;
+	border-color:red;
+	*/
+	background:#2e9cca;
+	
 }
-		
-#subnav 
+header
 {
-margin:0px;
-padding:0px;
-border:0px;
-height:16px;}
-
-article 	
-{			
-padding:0;
-margin-left:165px;
-width:435px;
-background-color:#fff;
-display:block;
-height:602px;
+	/*
+	border-color:#25274D;
+	*/
+	
 }
-
-nav 
+footer
 {
-display:block;
-float:left;
-width:165px;
-background:#fc3 url(navbg_04.gif) repeat-y top right;
-height:602px;
+	line-height:50px;
+	/*
+	border-style:solid;
+	border-color:orange;
+	*/
+	
 }
-
-footer 
+/*
+article
 {
-clear:both;
-width:600px;
-display:block;
-text-align:center;
-font-family:Arial, Helvetica, Geneva, Swiss, sans-serif;
-font-size:80%;
-padding:0;
-margin-top:0;
-background-color:#fff;
+	background-image:url("../images/Mountain_Sunset.jpg");
+	background-attachment: fixed;
+	border-top:5px solid #25274D;
+	border-bottom:5px solid #25274D;
+	border-color:#25274D;
+}
+*/
+nav
+{
+	/*
+	border-style:solid;
+	border-color:yellow;
+	*/
+}
+.btn-style
+{
+ background-color:#2e9cca;
+ border: 2px solid #25274d; 
+ margin: 5px 5px;
+ padding: 3px 3px;
+}
+#topbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #29648a; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+	margin: 4px 0px;
+	opacity: 0.9;
+	width:40px;
+	height: 40px;
 }
 
+#topbtn:hover {
+    background-color: #464866; /* Add a dark-grey background on hover */
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.col-links
+{
+	float:right;
+	width:18%;
+	padding:0px 0px;
+	}
+.column {
+    float: left;
+    width: 23.16%;
+    padding: 6px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+	padding: 60px 60px;
+	margin-left: auto; 
+	margin-right: auto;
+	width: 870px;	
+	background-color: #f7f9fb;
+	border: 5px solid #31708e;
+	box-shadow: -5px 8px 16px 2px rgba(0,0,0,0.73);
+	border-radius: 15px 15px 15px 15px;
+	
+}
+
+
+/* Expanding image text */
+.imgtext
+ {
+    position: absolute;
+    bottom: 15px;
+    left: 430px;
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:#2e9cca;
+	font-size: 35px;
+    cursor: pointer;
+}

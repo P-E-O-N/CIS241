@@ -1,0 +1,334 @@
+<!--THINGS TO INCLUDE
+Embedded Graphics throughout Web site
+3-4 paragrpahs about me and my interests (4-8 sentences per paragraph) -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!--REQ Meta = Author / Keywords / Description / http-equiv / robots -->
+		<meta name="author" content="Matthew Flack">
+		<meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer, Edmonds Community College">
+		<meta name="description" content="Home Page page for my first website">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="NOINDEX, NOFOLLOW">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Interests Page - Matthew Flack</title>
+		<link rel="stylesheet" href="../CSS/myStyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<style>
+			article
+			{	
+				background-image:url("../images/blue_waves.png");
+				background-attachment: fixed;
+				border-top:5px solid #25274D;
+				border-bottom:5px solid #25274D;
+				border-color:#25274D;
+			}
+		</style>
+		<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function()
+		{scrollFunction()};
+		function scrollFunction() 
+		{
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+			{
+				document.getElementById("topbtn").style.display = "block";
+			} else {
+				document.getElementById("topbtn").style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() 
+		{
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+		function myFunction(imgs)
+		{
+			var id = imgs.id;
+			if (id == "pic1" || id == "pic2" || id == "pic3" || id == "pic4" )
+			{
+				// Get the expanded image
+				var expandImg = document.getElementById("expandedImg_Loc1");
+				// Get the image text
+				var imgText = document.getElementById("imgtext_Loc1");
+			}
+			else if (id == "pic5" || id == "pic6" || id == "pic7" || id == "pic8" )
+			{
+				var expandImg = document.getElementById("expandedImg_Loc2");
+				// Get the image text
+				var imgText = document.getElementById("imgtext_Loc2");
+			}
+			else 
+			{
+				var expandImg = document.getElementById("expandedImg_Loc3");
+				// Get the image text
+				var imgText = document.getElementById("imgtext_Loc3");
+			}
+			
+			// Use the same src in the expanded image as the image being clicked on from the grid
+			expandImg.src = imgs.src;
+			// Use the value of the alt attribute of the clickable image as text inside the expanded image
+			imgText.innerHTML = imgs.alt;
+			// Show the container element (hidden with CSS)
+			expandImg.parentElement.style.display = "block";
+		}
+		</script>
+	</head>
+
+
+<!--BODY-->
+	<body id="top">
+		<header class="header-style">
+			<div class="logo-cont">
+				<img src="../images/logo_small.png" alt="My logo" width="140" class="logo-style"/>
+				<nav class="nav-style">
+					<ul>
+						<li><a href="home.htm">Home</a></li>
+						<li><a href="interests.htm">Interests</a></li>
+						<li><a href="resume.htm">Resume</a></li>
+						<li><a href="reflections.htm">Reflections</a></li>
+						<li><a href="guestbook.htm">Guest Book</a></li>
+					</ul>
+				</nav>
+			</div>
+		
+		</header>
+	<button onclick="topFunction()" id="topbtn" title="Go to top">&#8679;</button> <!--scrollbutton-->		
+ <!--ARTICLE-->
+	<article>
+	<br/>
+	<br/>
+
+		<div class="article-style">  <!--MY Family Seciton-->
+			<h1 style="display:inline"> Interests -</h1><h3 style="display:inline" id="name"> Matthew Flack </h3>
+			<br/>
+			<br/>
+			<hr class="light"/>
+			<br/>
+			<h3>My Family:</h3>
+			<br/>
+		
+			<p class="tab">
+				I have a beautiful wife, a 9-year old daughter named Quinn and four other furry family members in my household.   I also have 2 younger brothers, one of which currently lives in Hawaii while the youngest is in Leavenworth along with my father.  As a family, we enjoy spending time outdoors, playing games, traveling and taking our Sumo doggy along for the ride.   My daughter Quinn also has two crazy ferrets named Whiskey & Widget who she adores more than anything.  Since Coffee is the liquid of the gods in my house even the animals get excited when the espresso machine turns on.   It’s not uncommon to have 16 furry feet in the kitchen with me when it comes time to add the whip-cream to the mochas. 
+			<br/>
+			<br/>
+			<hr class="light"/>
+			<br/>
+			<h3> Videos:</h3>
+			<br/>
+			<!-- The four columns -->
+			<div class="row">
+				<div class="column">
+					<video width="201" height="113" class="media-border" controls>
+						<source src="../media/sled.mp4" type="video/mp4">
+						<source src="../media/sled.webm" type="video/webm">
+						I'm sorry, your browser doesn't support HTML5 video in MP4 with H.264. or WebM with VP8 codec.
+					</video>
+					<p class="center">Sledding with grandpa</p>
+				</div>
+				<div class="column">
+					<video width="201" height="113" class="media-border" controls>
+						<source src="../media/stuck.mp4" type="video/mp4">
+						<source src="../media/stuck.webm" type="video/webm">
+						I'm sorry, your browser doesn't support HTML5 video in MP4 with H.264. or WebM with VP8 codec.
+					</video>
+					<p class="center">Quinn stuck</p>
+				</div>
+				<div class="column">
+					<video width="201" height="113" class="media-border" controls>
+						<source src="../media/blanket_monster.mp4" type="video/mp4">
+						<source src="../media/blanket_monster.webm" type="video/webm">
+						I'm sorry, your browser doesn't support HTML5 video in MP4 with H.264. or WebM with VP8 codec.
+					</video>
+					<p class="center">Sumo playing</p>
+				</div>
+				<div class="column">
+					<video width="201" height="113" class="media-border" controls>
+						<source src="../media/climbing.mp4" type="video/mp4">
+						<source src="../media/climbing.webm" type="video/webm">
+						I'm sorry, your browser doesn't support HTML5 video in MP4 with H.264. or WebM with VP8 codec.
+					</video>
+				<p class="center">Climbing w/ Uncle</p>
+				</div>
+			</div>
+	<br/>
+	<hr class="light">
+	<br/>
+	<h3> Photos:</h3>
+	<br/>
+			<div class="row">
+				<div class="column">
+					<img id="pic1" class="media-border" src="../images/disneyland.png" alt="Disneyland" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic2" class="media-border" src="../images/pic_strip.png" alt="Family pic" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic3" class="media-border" src="../images/sumo_bed.png" alt="Sumo in bed" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic4" class="media-border" src="../images/clearwater.png" alt="Clearwater Florida" style="width:100%" onclick="myFunction(this);">
+				</div>
+			</div>
+		</div>
+	<br/>
+<!-- The expanding image container -->
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg_Loc1" style="width:100%">
+			<div id="imgtext_Loc1" class="imgtext"></div>
+		</div>
+		<br/>
+	 <!--Ferrets Section-->
+		<div class="article-style">  
+		<br/>
+		<hr class="light"/>
+		<br/>
+		<h3>Ferrets:</h3>
+		<br/>
+		<p class="tab">
+			They are <em>amazing</em> little critters that can live 6 – 10 years.  They are very inquisitive and intelligent and make good pets if you can provide a safe environment for them.  We currently have two ferrets named Whiskey and Widget.   They can sleep up to 18 hours a day and spend the remainder in short bursts of activity, going crazy or eating snacks.   I believe it’s a  good idea to have at least 2 ferrets because they love to snuggle, and it gives them a playmate for the times where they are sprinting around having fun.   They are smart enough to open drawers and love to <q>steal</q> things.  If there is a safe dark corner to hide stuff in it’s only a matter of time before it’s full of whatever they have grabbed.   Car keys, cat toys, socks etc.  My Daughter absolutely loves them and plays with them every day.
+		</p>		
+		<br/>
+		<hr class="light"/>
+		<br/>
+		<!-- The four columns -->
+			<div class="row">
+				<div class="column">
+					<img id="pic5" class="media-border" src="../images/myferrets.png" alt="Widget & Whiskey" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic6" class="media-border" src="../images/widget_starbucks.png" alt="Widget drinking" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic7" class="media-border" src="../images/bath.png" alt="Ferret floatys" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic8" class="media-border" src="../images/whiskey_teddy.jpg" alt="Whiskey on X-mas" style="width:100%" onclick="myFunction(this);">
+				</div>
+			</div>
+		</div>
+
+		<br/>
+		<!-- 2nd expanding image container  -->
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg_Loc2" style="width:100%">
+			<div id="imgtext_Loc2" class="imgtext">
+		</div>
+		</div>
+		<br/>
+		<!--Outdoors Section-->
+		<div class="article-style">  
+			<br/>
+			<hr class="light"/>
+			<br/>
+			<h3>Outdoors:</h3>
+			<br/>
+			<p class="tab">
+				I love spending time outdoors.  Leavenworth was such a pretty place to grow up as a kid that I think I just learned to appreciate the multitude of outdoor activities I had access to.   I remember spending a lot of time mountain biking and swimming in the river and even cross-country skiing in the winter.   I still enjoy snorkeling a ton and have been to the Crystal River in FL to snorkel with manatees and this summer we traveled to the Key West.   If we can make time, we usually get to go on a couple of family camping trips in the north Cascades as well.  
+			</p>		
+			<br/>
+			<hr class="light"/>
+			<br/>
+	<!-- The four columns -->
+			<div class="row">
+				<div class="column">
+					<img id="pic13" class="media-border" src="../images/downtown_sunset.png" alt="Seattle sunset" style="width:100%" onclick="myFunction(this);">
+				</div>
+					<div class="column">
+						<img id="pic14" class="media-border" src="../images/leavenworth_pic.png" alt="Leavenworth" style="width:100%" onclick="myFunction(this);">
+					</div>
+				<div class="column">
+					<img id="pic15" class="media-border" src="../images/tikal.png" alt="Tikal - Guatemala" style="width:100%" onclick="myFunction(this);">
+				</div>
+				<div class="column">
+					<img id="pic16" class="media-border" src="../images/turtle.png" alt="Grand Turk Turtle" style="width:100%" onclick="myFunction(this);">
+				</div>
+			</div>
+		</div>
+		<br/>
+	<!-- 3rd expanding image container  -->
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg_Loc3" style="width:100%">
+			<div id="imgtext_Loc3" class="imgtext">
+			</div>
+		</div>
+		<br/>
+		 <!--Other links Section-->
+		<div class="article-style">  
+		<br/>
+		<hr class="light"/>
+		<br/>
+		<h3>Other links:</h3>
+		<br/>
+		<p class="tab">
+			Below are some of the other websites that i visit frequently or find interesting.  If you enjoy some of the same things I do please visit any that pique your interest!
+		</p>
+		<br/>
+		<hr class="light"/>
+		<br/>
+		<div class="row">
+			<div class="col-links">
+				<img src="../images/book.png" alt="Book Icon" style="width:40%;padding-left:70px;">
+			</div>
+			<div class="col-links">
+				<img src="../images/edcc.png" alt="Edmonds Community College Icon" style="width:40%;padding-left:65px;">
+			</div>
+			<div class="col-links">
+				<img src="../images/watrails.png" alt="WA trails association" style="width:40%;padding-left:45px;">
+			</div>
+			<div class="col-links">
+				<img src="../images/ferret.png" alt="Ferret Icon" style="width:40%;padding-left:30px;">
+			</div>
+			<div class="col-links">
+				<img src="../images/lederhosen.png" alt="Lederhosen" style="width:40%">
+			</div>
+			</div>
+			<div class="nav-style">
+				<ul>
+					<li><a style="padding: 0px 32px" onclick="window.open('https://leavenworth.org/','_blank','width=600,height=400')">Leavenworth WA</a></li>
+					<li><a style="padding: 0px 32px;" onclick="window.open('http://everythingferret.com/','_blank','width=600,height=400')">Everything Ferret</a></li>
+					<li><a style="padding: 0px 32px;" onclick="window.open('https://www.wta.org/','_blank','width=600,height=400')">WA Trails</a></li>
+					<li><a style="padding: 0px 32px;" onclick="window.open('http://catalog.edcc.edu/preview_program.php?catoid=52&poid=10376&returnto=14813','_blank','width=600,height=400')">EdCC Web Dev. ATA</a></li>
+					<li><a style="padding: 0px 32px;" onclick="window.open('https://www.amazon.com/gp/new-releases/books/25','_blank','width=600,height=400')">Books</a></li>
+			
+				</ul>
+			</div>
+		<br/>
+		<br/>
+		</div>
+		<br/>
+		<br/>
+	</article>
+	<br/>
+	<div class="center"><h4>Contact me:</h4>maq.flack@gmail.com</div>
+	<br/>
+	<hr class="dark small"/>
+	<br/>
+	<!--ASIDE-->
+	<aside>
+	</aside>
+	
+	<!--FOOTER-->
+	<footer>
+		<div class="footer-cont">
+			<a class="float-left" href="https://validator.w3.org/#validate_by_upload" target="_blank"><img src="../images/HTML5_Logo_50.png" alt="HTML5 icon link to HTML valiadation" width="50"/></a>
+			<a class="float-left" href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank"><img style="padding-top:11px;" src="../images/valid-css2.png" alt="CSS icon link to validation" width="88"/></a>
+			<a class="float-right" href="https://www.w3schools.com/" target="_blank"><img style="padding-top:0px" src="../images/w3logo_148w.png" alt="W3 Schools icon and link" width="148"/></a>
+			<h5 class="center">&copy; 2018 Matthew Flack</h5>
+			</div>
+	</footer>
+	<br/>
+	<br/>
+	</body>
+</html>
+
+
+
+
