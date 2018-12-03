@@ -1,140 +1,153 @@
-<!--THINGS TO INCLUDE
-Embedded Graphics throughout Web site
-3-4 paragrpahs about me and my interests (4-8 sentences per paragraph) -->
-
-
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-	<!--REQ Meta = Author / Keywords / Description / http-equiv / robots -->
-	<meta name="author" content="Matthew Flack">
-	<meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer, Edmonds Community College">
-	<meta name="description" content="Home Page page for my first website">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="robots" content="NOINDEX, NOFOLLOW">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home Page - Matthew Flack</title>
-	<link rel="stylesheet" href="../CSS/myStyle.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<style>
-	article
-	{	
-		background-image:url("../images/clouds_in_water.png");
-		background-attachment: fixed;
-		border-top:5px solid #25274D;
-		border-bottom:5px solid #25274D;
-		border-color:#25274D;
-	}
-	</style>
-	<script>
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function()
-	{scrollFunction()};
-	function scrollFunction() 
-	{
-		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-		{
-			document.getElementById("topbtn").style.display = "block";
-		} else {
-			document.getElementById("topbtn").style.display = "none";
-		}
-	}
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() 
-	{
-		document.body.scrollTop = 0; // For Safari
-		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	}
-	</script>
-</head>
-
-
-<!--BODY-->
-<body id="top">
-	<header class="header-style">
-		<div class="logo-cont">
-			<img src="../images/logo_small.png" alt="My logo" width="140" class="logo-style"/>
-			<nav class="nav-style">
+    <head>
+        <meta name="author" content="Matthew Flack">
+        <meta name="keywords" content="Matthew Flack, HTML5, CSS, Homepage, my first website, Web Developer, Edmonds Community College">
+        <meta name="description" content="Home Page page for my first website">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="NOINDEX, NOFOLLOW">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reflections Page - Matthew Flack</title>
+        <link rel="stylesheet" href="../CSS/myStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <style>
+            article
+            {	
+				background-image:url("../images/clouds_in_water.png");
+				background-attachment: fixed;
+				border-top:5px solid #25274D;
+				border-bottom:5px solid #25274D;
+				border-color:#25274D;
+				background-size:cover;
+            }
+			a:hover
+			{
+				color:#aaabb8;	
+				cursor:pointer;
+			}
+			ul li 
+			{
+				padding-left:20px;
+			}
+			ul
+			{
+				padding-left:20px;
+			}
+        </style>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function()
+            {scrollFunction()};
+            function scrollFunction() 
+            {
+            	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+            	{
+            		document.getElementById("topbtn").style.display = "block";
+            	} else {
+            		document.getElementById("topbtn").style.display = "none";
+            	}
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() 
+            {
+            	document.body.scrollTop = 0; // For Safari
+            	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </head>
+    <!--BODY-->
+    <body id="top">
+        <header class="header-style">
+            <div class="logo-cont">
+                <img src="../images/logo_small.png" alt="My logo" width="140" class="logo-style"/>
+                <nav class="nav-style">
+                    <ul>
+                        <li><a href="home.htm">Home</a></li>
+                        <li><a href="interest.htm">Interests</a></li>
+                        <li><a href="resume.htm">Resume</a></li>
+                        <li><a href="reflections.htm">Reflections</a></li>
+                        <li><a href="guestbook.htm">Guest Book</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <button onclick="topFunction()" id="topbtn" title="Go to top">&#8679;</button> <!--scrollbutton-->		
+        <!--ARTICLE-->
+        <article>
+            <br/>
+            <br/>
+            <div class="article-style">
+                <h1 style="display:inline"> Reflections -</h1>
+                <h3 id="name" style="display:inline"> Matthew Flack</h3>
+                <br/>
+                <br/>
+                <hr class="light"/>
+                <br/>
+				<p class="tab">
+					As I think back on the 10 weeks of this course I had quite a few <strong>“Ah ha”</strong> moments where something that was giving me difficulty got a bit easier.  A lot of them were <strong>SUPER</strong> basic things but as this is my very first experience with HTML I think that’s ok.  The CIW website does a pretty good job of introducing the various concepts but I don’t think it goes into them in very much depth.  That is probably a good thing because I don’t retain a lot of detailed information like that without applying it a few times first.  
+                </p>
+				<br/>
+				<hr class="light"/>
+				<br/>
+				<!--Begin Reflections Bulletpoint list..-->
 				<ul>
-					<li><a href="home.htm">Home</a></li>
-					<li><a href="interests.htm">Interests</a></li>
-					<li><a href="resume.htm">Resume</a></li>
-					<li><a href="reflections.htm">Reflections</a></li>
-					<li><a href="guestbook.htm">Guest Book</a></li>
-				</ul>
-			</nav>
-		</div>
-		
-	</header>
-	<button onclick="topFunction()" id="topbtn" title="Go to top">&#8679;</button> <!--scrollbutton-->		
- <!--ARTICLE-->
-	<article>
-	<br/>
-	<br/>
-	<div class="article-style">
-		<h1 style="display:inline"> Reflections -</h1><h3 id="name" style="display:inline"> Matthew Flack</h3>
-<br/>
-<br/>
-<hr class="light"/>
-<br/>
-	 <h1> MY REFLECTIONS page... Under construction!</h1>
-	 <br/>
-	 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	
-	</div>
-	<br/>
-	<br/>
-	<div class="article-style">
-	<br/>
-	<h1> Title for the next section.</h1>
-	<br/>
-	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis ac nisi a finibus. Cras a ultrices massa. Etiam justo dolor, auctor sed odio non, cursus commodo nunc. Nam blandit metus eu efficitur commodo. Suspendisse ac maximus libero. Pellentesque ligula nisl, dictum a faucibus eleifend, consectetur sed est. In sed interdum leo. Praesent ac pretium odio, sit amet condimentum nunc. Duis fringilla posuere aliquam. Donec porta sem in fringilla vestibulum. Donec orci turpis, lobortis id est sit amet, vestibulum consequat erat. Nam porta, quam a efficitur iaculis, nisl ipsum porta ex, ut ultricies lectus justo sed felis. Curabitur volutpat enim sed laoreet malesuada.
-
-	Suspendisse ultricies posuere felis, nec imperdiet nulla malesuada a. Cras convallis, nulla luctus sollicitudin egestas, urna risus tincidunt arcu, eget imperdiet augue nibh sed orci. Mauris eget tortor vel tellus blandit consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ultricies vitae leo at rutrum. Mauris varius condimentum libero at mattis. Donec sit amet massa felis. Duis ullamcorper non massa sit amet mollis. Mauris mollis mattis orci, ut condimentum mauris rutrum non. Cras a imperdiet odio.
-
-	Integer augue augue, viverra vitae aliquam eget, euismod porttitor felis. Proin volutpat scelerisque urna, non rutrum odio volutpat ultricies. Cras aliquam elit et erat bibendum, ac dictum est bibendum. Nam eget leo ultrices, convallis risus sed, consectetur velit. Fusce ac enim dolor. Integer lobortis felis at dolor mattis blandit. Praesent sit amet ante mollis, iaculis tellus vitae, eleifend libero. Nullam semper tincidunt metus, nec egestas magna suscipit at. Vivamus tincidunt leo felis, et efficitur sem posuere id. Phasellus varius nisi libero, at consequat massa accumsan at. Cras consectetur leo lectus, non fringilla massa commodo eget. Donec condimentum nisl ac augue blandit, id iaculis mauris mollis. Nunc a condimentum diam. Phasellus nec risus felis.
-
-	Nulla facilisi. Praesent suscipit molestie mattis. Donec consequat, neque a dapibus vulputate, ante felis iaculis magna, a porttitor lorem mi nec justo. Duis sed erat a diam commodo feugiat vel vel ante. Integer nulla nibh, pharetra ac vulputate eu, lacinia eu lacus. Nam a feugiat sem. Maecenas vel nulla imperdiet diam aliquam facilisis ut ut arcu.
-
-	Nulla finibus tincidunt dolor, quis convallis dolor pellentesque at. Cras fermentum nisl feugiat nisl scelerisque euismod. Proin sit amet nulla venenatis, sagittis tortor vel, auctor nibh. Ut ut lectus non ante venenatis tempor ac sit amet lacus. Maecenas tempor, enim ac accumsan condimentum, est dolor blandit ligula, ut feugiat velit diam sollicitudin lectus. Integer ultricies euismod consectetur. Sed imperdiet maximus tortor sed ultricies. Vestibulum malesuada fermentum hendrerit. Aenean placerat consectetur velit. Nam non dignissim ipsum, vitae luctus quam. Aliquam gravida magna id tincidunt scelerisque. Suspendisse porta consectetur lacus, a molestie sapien sollicitudin in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus lacinia malesuada. Mauris feugiat dignissim 
-	<br/>
-	<p class="center">|</p>
-	
-	</div>
-	<br/>
-	<br/>
-	<br/>
-	</article>
-	<br/>
-	<div class="center"><h4>Contact me:</h4>maq.flack@gmail.com</div>
-	<br/>
-	<hr class="dark small"/>
-	<br/>
-	<!--ASIDE-->
-	<aside>
-	</aside>
-	<!--FOOTER-->
-	<footer>
-	
-			
-	<!--
-	 <span>HTML5 Logo by <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span>.
-	-->
-					
-	
-	
-		<div class="footer-cont">
-			<a class="float-left" href="https://validator.w3.org/#validate_by_upload" target="_blank"><img src="../images/HTML5_Logo_50.png" alt="HTML5 icon link to HTML valiadation" width="50"/></a>
-			<a class="float-left" href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank"><img style="padding-top:11px;" src="../images/valid-css2.png" alt="CSS icon link to validation" width="88"/></a>
-			
-			
-			<a class="float-right" href="https://www.w3schools.com/" target="_blank"><img style="padding-top:0px" src="../images/w3logo_148w.png" alt="W3 Schools icon and link" width="148"/></a>
-			<h5 class="center">&copy; 2018 Matthew Flack</h5>
-		</div>
-	</footer>
-	<br/>
-	<br/>
- </body>
+					<li>
+						My first “Ah ha” moment was when I came across the <strong><a style="text-decoration:underline" onclick="window.open('https://www.w3schools.com','_blank','width=600,height=400')">www.w3schools.com</a></strong> resource.  I’ve been using that website as my foremost place to look for additional information since I discovered it.<br/><br/>
+					</li>
+					<li>
+						Another such moment was realizing that for myself I <em>REALLY</em> learn best by doing.  This is probably truer in the case of web development,  but sadly it took me a few weeks before I realized this. I needed to sit down pull up Notepad++ and explore any idea / concept that I was having trouble with.<br/><br/>
+					</li>
+					<li>
+						<strong>“Ah Ha”…</strong>  If you right click on a website the “inspect” option has a TON of information in it.  I was aware of the ability to view source, but some-how  had never just clicked on inspect and I regret that it took me so long.<br/><br/>
+					</li>
+					<li>
+						<img class="float-right" src="../images/boxmodel.png" alt="CSS Box Model" width="150"/>
+						CSS box model (content / padding / border / margin) and the general idea that the basic layout of a website consists of containers within containers within containers.  I watched <strong>MANY</strong> different videos on the application of those ideas.   I feel like I understood the basics of using any given &lt;element&gt;, but the general layout was difficult.<br/><br/>
+					</li>
+					<li>
+						Another time where I felt like I was suddenly able to grasp a concept a lot more fully, was after reading this detailed description that I came across on how floats work.   The following link is an <strong><a style="text-decoration:underline" onclick="window.open('https://internetingishard.com/html-and-css/floats/','_blank','width=600,height=400')">explanation of floats</a></strong> and I still find myself reading over this occasionally because I don’t understand it on an intuitive level yet.<br/><br/>
+					</li>
+					<li>
+						<img class="float-right" src="../images/cssdiner.png" alt="CSS Diner Game icon" width="100"/>
+						CSS Selectors:   I wanted practice using the various selectors and came across this little game, which helped clarify them. I think I’m on level 20 something. <strong><a style="text-decoration:underline" onclick="window.open('https://flukeout.github.io/','_blank','width=600,height=400')">CSS Diner</a></strong><br/><br/>
+					</li>
+					<li>
+						<img style="vertical-align:top; padding-right:15px" class="float-left" src="../images/gimp.png" alt="GIMP icon" width="50"/>
+						GIMP can do everything I need to do with graphics for producing my website (so far).  I hadn’t played around with GIMP before but during the creation of my site I found I needed to add transparency layers, edit the size of images, or use the transform property to orient things as desired.  I had to watch quite a few "how to" video's but GIMP is free and got the job done.<br/><br/>
+					</li>
+					<li>
+						Github only likes lowercase letters because it's Linux based.   I know this was specifically covered in the homework where we uploaded stuff to Github but it seems like it caused me grief each and every time and was always a case of lowercase vs uppercase.<br/><br/>
+					</li>
+					<li>
+						My final “Ah ha” moment was more of a …….   <strong>“Ahhhhhhhh”</strong> moment when I realized that I was finally ready to turn in my competency demonstration.   I realize there is no end to the leaning though, so I better get used to it!<br/><br/>
+					</li>
+				</ul>	
+					<img class="img-center" src="../images/webdev.png" alt="Screenshot of my Resume" width="400"/>
+			</div>
+			<br/>
+            <br/>
+        </article>
+        <br/>
+        <div class="center">
+            <h4>Contact me:</h4>
+            maq.flack@gmail.com
+        </div>
+        <br/>
+        <hr class="dark small"/>
+        <br/>
+        <!--ASIDE-->
+        <aside>
+        </aside>
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-cont">
+                <a class="float-left" href="https://validator.w3.org/#validate_by_upload" target="_blank"><img src="../images/html5_logo_50.png" alt="HTML5 icon link to HTML valiadation" width="50"/></a>
+                <a class="float-left" href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank"><img style="padding-top:11px;" src="../images/valid-css2.png" alt="CSS icon link to validation" width="88"/></a>
+                <a class="float-right" href="https://www.w3schools.com/" target="_blank"><img src="../images/w3logo_148w.png" alt="W3 Schools icon and link" width="148"/></a>
+                <h5 class="center">&copy; 2018 Matthew Flack</h5>
+            </div>
+        </footer>
+        <br/>
+        <br/>
+    </body>
 </html>

@@ -6,7 +6,11 @@ margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
 }
-
+#quill
+{
+	height:450px;
+	opacity:0.07;
+}
 #name 
 {
 	color:black; 
@@ -14,53 +18,105 @@ font-family: 'Open Sans', sans-serif;
 	font-family:'brush script mt',courier; 
 	font-stretch:ultra-expanded;
 }
+/*-------------------BEGINS TABLE CSS for Resume-------------------*/
+table
+{
+table-layout:fixed;
+border:1px solid #29648a;
+border-collapse: collapse;
+box-shadow: -5px 8px 16px 2px rgba(0,0,0,0.53);
+}
+td,th
+{
+border:1px solid #29648a;
+padding:10px 15px;
+}	
+/*Bullet point list in Resume*/
+table ul 
+{
+	margin-left:15px;
+	list-style-position:outside;
+}
+.txt-top
+{
+	vertical-align:top;
+}
+.txt-bot
+{
+	vertical-align:bottom;
+}
+.txt-right
+{
+	text-align:right;
+	padding-right: 30px;
+}
+.txt-left
+{
+	text-align:left;
+	padding-left:20px;
+}
+.title
+{
+	font-size:1.6em;
+	font-weight:700; 
+}
+.cat-title
+{
+	font-size: 1.2em;
+	font-weight:700;
+	color:#25274d;
+	background-color:#2e9cca;
+	border-right:4px solid #29648a;
+	
+}
+.sub-title
+{
+	color:#29648a;
+	font-size: 1.2em;
+	font-weight:700;
+	font-family:'courier new',cursive; 
+}
+/*-- Defines column widths in Resume Table == */
+.col-1
+{
+	width:15%;
+}
+.col-2
+{
+	width:25%;
+}
+.col-3
+{
+	width:60%;
+}
 
+
+/*------------------END Resume Table CSS------------------------*/
 .tab
 {
 	text-indent:40px;
 	font-size:  16px;
 	line-height:1.5;
 }
-.guestbk-border
-{
-	border: 2px solid #29648a;
-	padding: 5px 5px;
-}
-.media-border
-{
-border: 2px solid #29648a;	
-}
+
+
 .footer-cont
 {
-max-width:1000px;
-margin: 0 auto;
-height: 50px;
-/*
-border-style: solid;
-border-color:white;
-*/
-min-width:700px;
+	max-width:1000px;
+	margin: 0 auto;
+	height: 50px;
+	min-width:700px;
 }
 
 .logo-cont
 {
-max-width:1000px;
-margin: 0 auto;
-height: 76px;
-min-width:700px;
-/*
-border-style: solid;
-border-color:white;
-*/
-
+	max-width:1000px;
+	margin: 0 auto;
+	height: 76px;
+	min-width:700px;
 }
 .header-style
 {
-	/* "Border" shorthand:width,style,color*/
-    
-	/*
-	border:5px solid #25274D;
-	*/
 	background:#2e9cca;
 }	
 hr.dark
@@ -80,23 +136,20 @@ hr.light
 	border: none;
 	opacity: 0.4;
 } 
-
 hr.small
 {
 	width:80%;
 }
-	
-
 .article-style
 {
-padding: 40px 60px;
-margin-left: auto; 
-margin-right: auto;
-width: 870px;	
-background-color: #f7f9fb;
-border: 5px solid #31708e;
-box-shadow: -5px 8px 16px 2px rgba(0,0,0,0.73);
-border-radius: 15px 15px 15px 15px;
+	padding: 40px 60px;
+	margin-left: auto; 
+	margin-right: auto;
+	width: 870px;	
+	background-color: #f7f9fb;
+	border: 5px solid #31708e;
+	box-shadow: -5px 8px 16px 2px rgba(0,0,0,0.73);
+	border-radius: 15px 15px 15px 15px;
 }
 .nav-style
 {
@@ -127,12 +180,6 @@ cursor:pointer;
 .center
 {
 text-align: center;
-/*
-line-height:50px;
-*/
-/*
-padding-top:15px;
-*/
 }	
 
 .float-left
@@ -145,57 +192,33 @@ padding-top:15px;
 	Float:Right;
 	Padding:5px 5px;
 }
-
+/*--Used to Center Web Dev Img @ bottm of Resume pg--*/
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 body
 {
-	/*
-	border-style:solid;
-	border-color:red;
-	*/
 	background:#2e9cca;
-	
 }
-header
-{
-	/*
-	border-color:#25274D;
-	*/
-	
-}
+
 footer
 {
 	line-height:50px;
-	/*
-	border-style:solid;
-	border-color:orange;
-	*/
-	
 }
-/*
-article
-{
-	background-image:url("../images/Mountain_Sunset.jpg");
-	background-attachment: fixed;
-	border-top:5px solid #25274D;
-	border-bottom:5px solid #25274D;
-	border-color:#25274D;
-}
-*/
-nav
-{
-	/*
-	border-style:solid;
-	border-color:yellow;
-	*/
-}
+
+/*--Guest book Sign & Reset Buttons--*/
 .btn-style
 {
- background-color:#2e9cca;
- border: 2px solid #25274d; 
- margin: 5px 5px;
- padding: 3px 3px;
+	background-color:#2e9cca;
+	border: 2px solid #25274d; 
+	margin: 5px 5px;
+	padding: 3px 3px;
 }
-#topbtn {
+#topbtn 
+{
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -225,32 +248,36 @@ nav
 	float:right;
 	width:18%;
 	padding:0px 0px;
-	}
-.column {
+}
+.column
+ {
     float: left;
     width: 23.16%;
     padding: 6px;
 }
 
 /* Style the images inside the grid */
-.column img {
-    opacity: 0.8; 
+.column img, video 
+{
+    opacity: 1; 
     cursor: pointer; 
 }
 
-.column img:hover {
-    opacity: 1;
+.column img:hover, video:hover {
+    opacity: 0.8;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row:after
+{
     content: "";
     display: table;
     clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+/* The expanding image container (positioning is needed to position the close button and the text)-Interests pg */
+.container 
+{
     position: relative;
     display: none;
 	padding: 60px 60px;
@@ -263,8 +290,6 @@ nav
 	border-radius: 15px 15px 15px 15px;
 	
 }
-
-
 /* Expanding image text */
 .imgtext
  {
@@ -274,8 +299,6 @@ nav
     color: black;
     font-size: 20px;
 }
-
-
 /* Closable button inside the image */
 .closebtn {
     position: absolute;
